@@ -1,0 +1,268 @@
+/* 네비게이션 바 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #FF7F00; /* 주황색 배경 */
+  padding: 10px 120px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* 세로 정렬 */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white; /* 글씨색 흰색 */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #FF4500; /* 마우스 오버 시 어두운 주황색 */
+  border-radius: 5px;
+}
+
+/* 타이틀 스타일 */
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding-right: 20px; /* 타이틀과 다른 항목들 간의 간격 */
+}
+
+#background {
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  height: auto;
+  padding: 30px 0px;
+}
+
+#content{
+  width: 96%;
+  height: auto;
+  margin: 0px 30px;
+  background-color: white;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 8px;
+}
+
+section {
+  width: 97%;
+  height: auto;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+#titleZone{
+  width: 50%;
+}
+
+#titleZone h1{
+  height: 14px;
+  font-size: 36px;
+}
+
+#titleButtonZone{
+  width: 50%;
+}
+
+#category{
+  width: 94%;
+  height: auto;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  padding: 3px 8px;
+}
+#category p, a{
+  display: inline;
+  color: rgb(53, 53, 53);
+}
+#category a{
+  color: rgb(86, 86, 255) !important;
+  text-decoration: none;
+}
+
+#history{
+  width: 95%;
+  height: auto;
+  border: 3px solid #FF7F00;
+
+}
+#history div{
+  width: 100%;
+  height: 40px;
+}
+#history #historyTitle{
+  background-color: #FF7F00;
+  text-align: center; /* 수평 중앙 정렬 */
+  line-height: 40px; /* 수직 중앙 정렬 */
+  color: white;
+  font-weight: 800;
+}
+#history #historyDetail{
+  display: none;
+}
+#history #historyButton{
+  text-align: center; /* 수평 중앙 정렬 */
+  line-height: 40px; /* 수직 중앙 정렬 */
+  cursor: pointer; /* 마우스 커서 모양 */
+}
+
+#summary{
+  width: 95.5%;
+  height: 1100px;
+}
+#summary #summaryList{
+  float: left;
+  width: 38%;
+  padding-left: 30px;
+  border: 1px solid rgb(197, 197, 197);
+}
+#summary #summaryList ol {
+  list-style-type: none; /* 숫자 제거 */
+  padding-left: 0; /* 기본 들여쓰기 제거 */
+}
+#summary #summaryList ol a{
+  text-decoration: none;
+  color: rgb(67, 127, 255);
+}
+#summary #summaryList ol a:hover{
+  text-decoration:underline;
+}
+#summary #summaryList ol ol {
+  padding-left: 20px; /* 하위 목록에 들여쓰기 추가 */
+}
+
+#summary #summaryInfo{
+  float: right;
+  width: 50%;
+  height: auto
+}
+/* 테이블 스타일 */
+#summary #summaryInfo table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 경계선 겹치지 않게 */
+  margin: 0px 0; /* 테이블 간격 */
+  font-family: Arial, sans-serif; /* 글꼴 */
+  border: 2px solid #FF7F00 !important;
+}
+
+/* 테이블 헤더 스타일 */
+#summary #summaryInfo th {
+  background-color: #FF7F00; /* 헤더 배경 색 */
+  color: white; /* 글자 색 */
+  padding: 12px; /* 패딩 */
+  text-align: center; /* 텍스트 왼쪽 정렬 */
+}
+
+/* 테이블 데이터 셀 스타일 */
+#summary #summaryInfo td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* 각 행에 경계선 추가 */
+}
+
+/* 이미지 스타일 */
+#summary #summaryInfo img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* 마지막 행의 경계선 제거 */
+#summary #summaryInfo tr:last-child td {
+  border-bottom: none;
+}
+
+/* 테이블의 전체 경계선 */
+#summary #summaryInfo table, th, td {
+  border: 1px solid #ddd;
+}
+#infoNameFont {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center !important;
+}
+
+.info{
+  width: 96%;
+}
+.info .infoTitle{
+  border-bottom: 1px solid rgb(197, 197, 197);
+  height: 60px
+}
+.info .infoTitle h2{
+  font-size: 38px;
+  color: rgb(60, 60, 236);
+}
+.info .infoTitle iframe{
+  width: 60%;
+}
+
+.info .infoDetail{
+  padding: 16px 0px;
+}
+.info .infoDetail img{
+  max-width: 60%;
+  padding: 8px;
+  border: 1px solid rgb(197, 197, 197);
+}
+.info .infoDetail h3{
+  font-size: 26px;
+  font-weight: 800;
+  color: rgb(60, 60, 236);
+}
+.info .infoDetail h4{
+  font-size: 18px;
+}
+
+/* .infoDetail 클래스 하위에 있는 테이블에 스타일 적용 */
+.infoDetail table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 경계선 겹침 방지 */
+  margin: 20px 0; /* 테이블 위아래 간격 */
+}
+
+.infoDetail th, .infoDetail td {
+  padding: 10px;
+  text-align: center; /* 텍스트 가운데 정렬 */
+  border: 1px solid #ddd; /* 테이블 셀 경계선 */
+}
+
+.infoDetail th {
+  background-color: #FF7F00; /* 헤더 배경색 */
+  font-weight: bold; /* 헤더 글자 두껍게 */
+  color: white;
+}
+
+.infoDetail td {
+  background-color: #fff !important; /* 일반 셀 배경색 */
+}
+
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid rgb(197, 197, 197);
+}
